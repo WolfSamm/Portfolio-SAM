@@ -13,6 +13,13 @@
   width: 100%;
 }
 
+h2{
+  color: #9e92f6;
+  font-size: 40px;
+}
+
+/* ------------------------------HEADER---------------------------------------*/
+
 #header{
   height: 600px;
   width: 100%;
@@ -56,17 +63,18 @@ h1{
 
 }
 
+/*-----------------------------------------ABOUT ME-------------------------------------------*/
+
 #about-me{
   display: flex;
-  background-color: #d7d2ff;
   padding: 20px;
   max-height: 650px;
+  background-color: #d7d2ff;
 }
 
 div.photo{
   width: 500px;
 }
-
 
 .photo img{
   height: 600px;
@@ -81,19 +89,95 @@ div.description{
   align-items: center;
 }
 .description h2{
-  font-size: 40px;
-  color: #9e92f6;
   display: flex;
   justify-content: center;
 }
 
 .description p{
   min-width: 200px;
+  padding-top: 50px;
 }
 
-div.skills h3{
-  color: #9e92f6;
+/*-----------------------------------------------SKILLS-------------------------------------------------------*/
+
+#skills{
+  padding: 20px;
+  display: flex;
+  max-height: 450px;
 }
+
+div.skills{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.skills h2{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skills ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li{
+  color: #ccc5fe;
+}
+
+
+/*----------------------------------------------PROJETS---------------------------------------------------------*/
+
+#projets{
+  height: 560;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(20deg,#e35b6b,#e9c197,#9083f7); /* #23d5ab */
+  background-size: 300% 300%;
+  display: flex;
+  flex-direction: column;
+}
+
+#projets h2{
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+section.projets{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+div.projet img{
+  height: 370px;
+  width: 270px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+div.projet{
+  display: flex;
+  flex-direction: column;
+}
+
+h4{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #9083f7;
+}
+
+
+
 
 
 
