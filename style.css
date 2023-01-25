@@ -1,0 +1,99 @@
+
+@font-face {
+  font-family: myFont;
+  src: url(milgnite/Milgnite.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+  color: white;
+  width: 100%;
+}
+
+#header{
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg,#ea5c6d,#9e92f6,#e7bb8c, #ee6777); /* #23d5ab */
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.title-container{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+h1{
+  font-size: 70px;
+
+}
+
+#about-me{
+  display: flex;
+  background-color: #d7d2ff;
+  padding: 20px;
+  max-height: 650px;
+}
+
+div.photo{
+  width: 500px;
+}
+
+
+.photo img{
+  height: 600px;
+  width: 450px;
+  padding: 30px;
+}
+
+div.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description h2{
+  font-size: 40px;
+  color: #9e92f6;
+  display: flex;
+  justify-content: center;
+}
+
+.description p{
+  min-width: 200px;
+}
+
+div.skills h3{
+  color: #9e92f6;
+}
+
+
+
