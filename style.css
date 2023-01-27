@@ -14,7 +14,7 @@ a:hover{
 
  *{
   padding: 0;
-  margin: 0;
+  margin: 0 ;
   box-sizing: border-box;
   font-family: myFont;
   color: white;
@@ -76,15 +76,14 @@ nav a{
 }
 
 nav a:hover{
-  border-bottom: 3px solid #5642f0;
-  padding-bottom: 30px;
+  color: #ee6777;
 }
 
 .title-container{
   width: 600px;
   display: flex;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 130px;
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
@@ -94,23 +93,36 @@ h1{
   font-size: 70px;
 } 
 
+.title-container p{
+  font-size: 30px;
+}
+
 /*-----------------------------------------ABOUT ME-------------------------------------------*/
 
  #about-me{
   display: flex;
   padding: 20px;
-  max-height: 650px;
+  min-height: 650px;
   background-color: #d7d2ff;
 }
 
 div.photo{
-  width: 500px;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  padding-top: 100px;
 }
 
 .photo img{
+  display: flex;
+  align-items: center;
   height: 600px;
   width: 450px;
   padding: 30px;
+}
+
+img.bardenas{
+  display: none;
 }
 
 div.description{
@@ -127,6 +139,8 @@ div.description{
 .description p{
   min-width: 200px;
   padding-top: 50px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 23px;
 } 
 
 /*-----------------------------------------------SKILLS-------------------------------------------------------*/
@@ -134,7 +148,7 @@ div.description{
  #skills{
   padding: 20px;
   display: flex;
-  max-height: 450px;
+  max-height: 500px;
 }
 
 div.skills{
@@ -290,10 +304,11 @@ padding-left: 20px;
 
 #langues h5{
   color: white;
+  font-size: 20px;
 }
 
 #langues p{
-  font-size: 12px;
+  font-size: 15px;
 }
 
 div.langue{
@@ -350,7 +365,7 @@ footer p{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 43px;
+  padding-top: 49px;
   gap: 10px;
 }
 
@@ -359,11 +374,60 @@ div.contact{
 }
 
 div.contact i{
+  display: flex;
   color: #9083f7;
   font-size: 30px;
 } 
 
+/*-----------------------------------------------------------------BREAKPOINT TABLETTE---------------------------------------------------*/
 
+@media  screen and (max-width: 768px) {
+
+  #about-me{
+    flex-direction: column-reverse;
+  }
+
+  div.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  img.royan{
+    display: none;
+  }
+
+  img.bardenas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+
+  section.projets{
+    flex-direction: column;
+  }
+
+  div.projet{
+    flex-direction: inherit;
+
+  }
+
+  div.langue{
+    padding-left: 100px;
+  }
+
+  #contacts{
+    padding-left: 50px;
+  }
+  
+  .description p{
+    padding: 20px;
+  }
+}
 
 
 
