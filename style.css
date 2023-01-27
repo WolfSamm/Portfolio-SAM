@@ -79,7 +79,7 @@ nav a:hover{
 }
 
 .title-container{
-  width: 600px;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   padding-top: 130px;
@@ -203,7 +203,7 @@ section.projets{
 
 div.projet img{
   height: 370px;
-  width: 270px;
+  max-width: 270px;
 }
 
 div.projet{
@@ -376,6 +376,20 @@ div.contact i{
 
 /*-----------------------------------------------------------------BREAKPOINT TABLETTE---------------------------------------------------*/
 
+@media  screen and (992px) {
+
+  section.projets{
+    
+  }
+
+  div.projet{
+    flex-wrap: wrap;
+  }
+  
+}
+
+
+
 @media  screen and (max-width: 768px) {
 
   #about-me{
@@ -418,6 +432,65 @@ div.contact i{
   .description p{
     padding: 20px;
   }
+
+  #skills{
+    max-height: inherit;
+  }
+
+  #formations{
+    max-height: inherit;
+  }
+
+}
+
+@media screen and (max-width: 580px){
+
+  #header{
+    height: auto;
+  }
+
+  div.title-container{
+    padding-top: 30px;
+    padding: 30px;
+  }
+
+  .title-container p{
+    font-size: 20px;
+  }
+
+
+
+  div.formation{
+    padding-left: 10px;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+
+  div.contact{
+    line-height: 30px;
+  }
+
+  div.contact.logo{
+    padding-top: 0;
+  }
+
+  #skills ul{
+    padding-left: 10px;
+  }
+
+  div.langue{
+    padding-left: 10px;
+  }
+
+  #contactez-moi h1{
+    font-size: 50px;
+  }
+
+
+
+
 }
 
 
