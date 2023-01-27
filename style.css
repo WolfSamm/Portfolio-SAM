@@ -376,19 +376,21 @@ div.contact i{
 
 /*-----------------------------------------------------------------BREAKPOINT TABLETTE---------------------------------------------------*/
 
-@media  screen and (992px) {
-
-  section.projets{
-    
-  }
+@media  screen and (max-width: 992px){
 
   div.projet{
     flex-wrap: wrap;
   }
+
+  div.langue{
+    padding-left: inherit;
+  }
+
+  footer#contacts{
+    padding-left: 80px;
+  }
   
 }
-
-
 
 @media  screen and (max-width: 768px) {
 
