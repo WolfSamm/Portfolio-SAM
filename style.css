@@ -445,6 +445,8 @@ div.contact i{
 
 }
 
+/*-----------------------------------------------------------------------BREAKPOINT PORTABLE------------------------------------------------------------------------------*/
+
 @media screen and (max-width: 580px){
 
   #header{
@@ -459,8 +461,6 @@ div.contact i{
   .title-container p{
     font-size: 20px;
   }
-
-
 
   div.formation{
     padding-left: 10px;
@@ -490,15 +490,21 @@ div.contact i{
     font-size: 50px;
   }
 
-
-
-
 }
 
+/*-------------------------------------------------------------------------------BREAKPOINT PORTABLE2.0---------------------------------------------*/
 
+@media  screen and (max-width:380px) {
 
+  #skills{
+    padding: inherit;
+  }
 
-
+  li{
+    list-style: none;
+  }
+  
+}
 
 
 
