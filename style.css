@@ -1,84 +1,93 @@
-
 @font-face {
   font-family: myFont;
   src: url(mariana/mariana.ttf);
 }
-
-html{
-  scroll-behavior: smooth;
-}
-
-a:hover{
+a:hover {
   cursor: pointer;
 }
 
- *{
+* {
   padding: 0;
-  margin: 0 ;
+  margin: 0;
   box-sizing: border-box;
-  font-family: myFont;
-  color: white;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
-h2{
+h1 {
+  font-size: 70px;
+  font-family: myFont;
+}
+
+h2 {
   color: #9e92f6;
   font-size: 40px;
-} 
+  font-family: myFont;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #9e92f6;
+}
+
+h5 {
+  color: #9e92f6;
+  font-size: 16px;
+}
 
 /* ------------------------------HEADER---------------------------------------*/
-
- #header{
+#header {
   height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.container{
+.container {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(45deg,#ea5c6d,#9e92f6,#e7bb8c, #ee6777); /* #23d5ab */
+  background: linear-gradient(45deg, #ea5c6d, #9e92f6, #e7bb8c, #ee6777); /* #23d5ab */
   background-size: 300% 300%;
   animation: color 12s ease-in-out infinite;
 }
 
-@keyframes color{
-
-  0%{
+@keyframes color {
+  0% {
     background-position: 0 50%;
   }
-  50%{
+  50% {
     background-position: 100% 50%;
   }
-  100%{
+  100% {
     background-position: 0 50%;
   }
 }
-
-nav{
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
   margin-bottom: 0;
 }
-
-nav a{
+nav a {
   display: flex;
   justify-content: center;
   padding-top: 10px;
   gap: 5px;
+  text-decoration: none;
 }
-
-nav a:hover{
+nav a:hover {
   color: #ee6777;
 }
 
-.title-container{
+.title-container {
   max-width: 600px;
   display: flex;
   justify-content: center;
@@ -87,262 +96,198 @@ nav a:hover{
   text-align: center;
   flex-wrap: wrap;
 }
-
-h1{
-  font-size: 70px;
-} 
-
-.title-container p{
+.title-container p {
   font-size: 30px;
 }
 
 /*-----------------------------------------ABOUT ME-------------------------------------------*/
-
- #about-me{
+#about-me {
   display: flex;
   padding: 20px;
   min-height: 650px;
   background-color: #d7d2ff;
 }
-
-div.photo{
+#about-me .photo {
   display: flex;
   align-items: center;
   max-width: 500px;
   padding-top: 100px;
 }
-
-.photo img{
+#about-me .photo img {
   display: flex;
   align-items: center;
   height: 600px;
   width: 450px;
   padding: 30px;
 }
-
-div.description{
+#about-me .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.description h2{
+#about-me .description h2 {
   display: flex;
   justify-content: center;
 }
-
-.description p{
+#about-me .description p {
   min-width: 200px;
   padding-top: 50px;
-  font-family:'Times New Roman', Times, serif;
   font-size: 23px;
-} 
+}
 
 /*-----------------------------------------------SKILLS-------------------------------------------------------*/
-
- #skills{
+#skills {
   padding: 20px;
   display: flex;
   max-height: 500px;
 }
-
-div.skills{
+#skills .skills {
   display: flex;
   flex-direction: column;
-
 }
-
-.skills h2{
+#skills .skills h2 {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
-
-.skills ul{
-  display: flex;
+#skills .skills ul {
   flex-direction: column;
   justify-content: center;
-}
-
-#skills ul{
   padding-left: 100px;
 }
-
-li{
-  color: #ccc5fe;
-} 
-
+#skills .skills ul li {
+  color: #9e92f6;
+}
 
 /*----------------------------------------------PROJETS---------------------------------------------------------*/
-
- #projets{
-  /* height: 560px; */
+#projets {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(20deg,#e35b6b,#e9c197,#9083f7);
+  background: linear-gradient(20deg, #e35b6b, #e9c197, #9083f7);
   background-size: 300% 300%;
   display: flex;
   flex-direction: column;
 }
-
-#projets h2{
-  color: white;
+#projets h2 {
+  color: #ffffff;
   display: flex;
   justify-content: center;
   padding: 50px;
 }
-
-section.projets{
+#projets .projets {
   display: flex;
   padding: 20px;
   justify-content: center;
   gap: 10px;
-
 }
-
-div.projet img{
-  height: 370px;
-  max-width: 270px;
+#projets .projets p {
+  text-align: center;
 }
-
-div.projet{
+#projets .projets .projet {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
 }
-
-h4{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  color: #9083f7;
+#projets .projets .projet img {
+  height: 370px;
+  max-width: 270px;
 }
 
-section.projets p{
-  text-align: center;
-} 
-
 /*---------------------------------------------------------------FORMATION---------------------------------------*/
-
-#formations{
+#formations {
   display: flex;
   flex-direction: column;
   max-height: 400px;
   padding: 20px;
 }
-
-#formations h2{
+#formations h2 {
   display: flex;
   justify-content: center;
 }
-
-h5{
-  color: #9083f7;
-  font-size: 16px;
-}
-
-div.formation{
+#formations .formation {
   display: flex;
   color: #9e92f6;
   gap: 5px;
   padding-left: 100px;
 }
-
-.logo-formation{
+#formations .formation .logo-formation {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 150px;
   max-height: 200px;
 }
-
-.logo-formation img{
+#formations .formation .logo-formation img {
   height: 90px;
   width: 90px;
 }
-
-div.descriptif-formation{
+#formations .formation .descriptif-formation {
   color: #9e92f6;
   padding: 20px;
 }
-
-.descriptif-formation p{
+#formations .formation .descriptif-formation p {
   color: #9e92f6;
   font-size: 13px;
 }
-
-.descriptif-formation li{
+#formations .formation .descriptif-formation li {
   font-size: 12px;
+  color: #9e92f6;
+}
+#formations .formation .descriptif-formation ul {
+  padding-left: 20px;
 }
 
-.descriptif-formation ul{
-padding-left: 20px;
-} 
-
 /*--------------------------------------------------LANGUES--------------------------------------------------*/
-
- #langues{
+#langues {
   background-color: #d7d2ff;
   display: flex;
   flex-direction: column;
   padding: 20px;
   min-height: 250px;
 }
-
-#langues h2{
-  color: white;
+#langues h2 {
+  color: #ffffff;
   display: flex;
   justify-content: center;
 }
-
-#langues h5{
-  color: white;
+#langues h5 {
+  color: #ffffff;
   font-size: 20px;
 }
-
-#langues p{
+#langues p {
   font-size: 15px;
 }
-
-div.langue{
+#langues .langue {
   display: flex;
   gap: 10px;
-}
-
-.descriptif-langue{
-  gap: 10px;
-
-}
-
-div.langue{
-  display: flex;
   padding: 30px;
   padding-left: 250px;
-} 
+}
+#langues .langue .descriptif-langue {
+  gap: 10px;
+}
 
 /*-------------------------------------------------------------CONTACTEZ-MOI-------------------------------------------------*/
-
-#contactez-moi{
+#contactez-moi {
   height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(50deg,#9083f7,#ee899a,#9e92f6, #d15362);
+  background: linear-gradient(50deg, #9083f7, #e35b6b, #9083f7, #ea5c6d);
   background-size: 300% 300%;
 }
-
-#contactez-moi h1{
+#contactez-moi h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-} 
+}
 
 /*------------------------------------------------------------------CONTACTS----------------------------------------------------------*/
-
-footer{
+footer {
   display: flex;
   min-height: 200px;
   justify-content: center;
@@ -351,12 +296,18 @@ footer{
   gap: 10px;
   padding-left: 150px;
 }
-
-footer p{
-  color: #9083f7;
+footer .contact {
+  line-height: 50px;
 }
-
-.logo{
+footer .contact p {
+  color: #9e92f6;
+}
+footer .contact i {
+  display: flex;
+  color: #9e92f6;
+  font-size: 30px;
+}
+footer .contact__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,149 +315,92 @@ footer p{
   gap: 10px;
 }
 
-div.contact{
-  line-height: 50px;
-}
-
-div.contact i{
-  display: flex;
-  color: #9083f7;
-  font-size: 30px;
-} 
-
 /*-----------------------------------------------------------------BREAKPOINT TABLETTE---------------------------------------------------*/
-
-@media  screen and (max-width: 992px){
-
-  div.projet{
+@media screen and (max-width: 992px) {
+  div.projet {
     flex-wrap: wrap;
   }
-
-  div.langue{
+  #langues .langue {
     padding-left: inherit;
   }
-
-  footer#contacts{
+  footer#contacts {
     padding-left: 80px;
   }
-  
 }
-
-@media  screen and (max-width: 768px) {
-
-  #about-me{
+@media screen and (max-width: 768px) {
+  #about-me {
     flex-direction: column-reverse;
   }
-
-  div.photo{
+  #about-me .photo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding-top: 30px;
   }
-
-  img.royan{
+  #about-me .royan {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
     width: 100%;
   }
-
-  section.projets{
+  section.projets {
     flex-direction: column;
   }
-
-  div.projet{
+  section.projets .projet {
     flex-direction: inherit;
-
   }
-
-  div.langue{
-    padding-left: 100px;
-  }
-
-  #contacts{
+  #contacts {
     padding-left: 50px;
   }
-  
-  .description p{
+  .description p {
     padding: 20px;
   }
-
-  #skills{
+  #skills {
     max-height: inherit;
   }
-
-  #formations{
+  #formations {
     max-height: inherit;
   }
-
 }
-
 /*-----------------------------------------------------------------------BREAKPOINT PORTABLE------------------------------------------------------------------------------*/
-
-@media screen and (max-width: 580px){
-
-  #header{
+@media screen and (max-width: 580px) {
+  #header {
     height: auto;
   }
-
-  div.title-container{
+  #skills .skills ul {
+    padding-left: 10px;
+  }
+  #contactez-moi h1 {
+    font-size: 50px;
+  }
+  div.title-container {
     padding-top: 30px;
     padding: 30px;
   }
-
-  .title-container p{
+  div.title-container p {
     font-size: 20px;
   }
-
-  div.formation{
+  div.formation {
     padding-left: 10px;
   }
-
-  footer{
+  footer {
     flex-direction: column;
   }
-
-  div.contact{
-    line-height: 30px;
+  footer .contact {
+    line-height: 20px;
   }
-
-  div.contact.logo{
+  footer .contact.logo {
     padding-top: 0;
   }
-
-  #skills ul{
-    padding-left: 10px;
-  }
-
-  div.langue{
-    padding-left: 10px;
-  }
-
-  #contactez-moi h1{
-    font-size: 50px;
-  }
-
 }
-
 /*-------------------------------------------------------------------------------BREAKPOINT PORTABLE2.0---------------------------------------------*/
-
-@media  screen and (max-width:380px) {
-
-  #skills{
+@media screen and (max-width: 380px) {
+  #skills {
     padding: inherit;
   }
-
-  li{
+  #skills li {
     list-style: none;
   }
-  
-}
-
-
-
-
-
+}/*# sourceMappingURL=style.css.map */
